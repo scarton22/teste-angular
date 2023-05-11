@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Company ID</th>
+      <th>Broker Code</th>
+      <th>Product Code</th>
+      <th>Inspection Number</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.productName }}</td>
+      <td>{{ item.companyId }}</td>
+      <td>{{ item.brokerCode }}</td>
+      <td>{{ item.productCode }}</td>
+      <td>{{ item.InspectionNumber }}</td>
+      <td>
+        <ng-container *ngIf="editingItemId === item.Id">
+          <input type="text" [(ngModel)]="item.productName" (keyup.enter)="saveItem(item.Id)">
+          <button (click)="cancelEditing(item)">Cancelar</button>
+          <button (click)="saveItem(item)">Salvar</button>
+        </ng-container>
+        <ng-container *ngIf="editingItemId !== item.Id">
+          {{ item.productName }}
+          <button (click)="startEditing(item.Id)">Editar</button>
+          <button (click)="deleteItem(item.Id)">Excluir</button>
+        </ng-container>
+      </td>
+    </tr>
+  </tbody>
+</table>

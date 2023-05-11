@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "Id": 1,
+      "companyId": "ABC",
+      "brokerCode": "BROKER1",
+      "productCode": "PROD1",
+      "productName": "Product 1",
+      "InspectionNumber": 123,
+      "reports": [
+        {
+          "Id": 1,
+          "status": 1,
+          "observation": "Observation 1"
+        },
+        {
+          "Id": 2,
+          "status": 2,
+          "observation": "Observation 2"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "companyId": "XYZ",
+      "brokerCode": "BROKER2",
+      "productCode": "PROD2",
+      "productName": "Product 2",
+      "InspectionNumber": 456,
+      "reports": [
+        {
+          "Id": 3,
+          "status": 1,
+          "observation": "Observation 3"
+        },
+        {
+          "Id": 4,
+          "status": 2,
+          "observation": "Observation 4"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "companyId": "XYZ",
+      "brokerCode": "BROKER2",
+      "productCode": "PROD2",
+      "productName": "Product 2",
+      "InspectionNumber": 456,
+      "reports": [
+        {
+          "Id": 3,
+          "status": 1,
+          "observation": "Observation 3"
+        },
+        {
+          "Id": 4,
+          "status": 2,
+          "observation": "Observation 4"
+        }
+      ]
+    }, {
+      "Id": 4,
+      "companyId": "XYZ",
+      "brokerCode": "BROKER2",
+      "productCode": "PROD2",
+      "productName": "Product 2",
+      "InspectionNumber": 456,
+      "reports": [
+        {
+          "Id": 3,
+          "status": 1,
+          "observation": "Observation 3"
+        },
+        {
+          "Id": 4,
+          "status": 2,
+          "observation": "Observation 4"
+        }
+      ]
+    }
+  ]
+}
